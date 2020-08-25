@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <style>
+        h1 {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .friend {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .rating {
+            display: flex;
+            padding: 10px
+        }
+    </style>
+    <script src='/index.js' defer></script>
+    <body>
+        <h1> Friends (The List)</h1>
+        <form method="POST" action='/api/friends'>
+            <input name ='toCreate'>
+            <button>Create</button>
+        </form>
+        <div>
+            <ul id='friendsList'>
+            </ul>
+        </div>
+    </body>
+</html>
